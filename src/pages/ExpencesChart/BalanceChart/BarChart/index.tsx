@@ -1,3 +1,4 @@
+import { AxisBottom } from '@visx/axis';
 import { Group } from '@visx/group';
 import { scaleBand, scaleLinear } from '@visx/scale';
 import { Bar } from '@visx/shape';
@@ -15,7 +16,7 @@ function BarChart({ width, height }: { width: number; height: number }) {
 
     // bounds
     const xMax = width;
-    const yMax = height;
+    const yMax = height - 20;
 
     // scales, memoize for performance
     const xScale = useMemo(
@@ -24,7 +25,7 @@ function BarChart({ width, height }: { width: number; height: number }) {
                 range: [0, xMax],
                 round: true,
                 domain: data.map(getDay),
-                padding: 0.3,
+                padding: 0.2,
             }),
         [xMax]
     );
@@ -40,17 +41,16 @@ function BarChart({ width, height }: { width: number; height: number }) {
 
     return width < 10 ? null : (
         <svg height={height} width={width}>
-            <rect width={width} height={height} fill='green' rx={14} />
             <Group top={0}>
                 {data.map((d) => {
-                    const letter = getDay(d);
+                    const day = getDay(d);
                     const barWidth = xScale.bandwidth();
                     const barHeight = yMax - (yScale(getAmount(d)) ?? 0);
-                    const barX = xScale(letter);
+                    const barX = xScale(day);
                     const barY = yMax - barHeight;
                     return (
                         <Bar
-                            key={`bar-${letter}`}
+                            key={`bar-${day}`}
                             x={barX}
                             y={barY}
                             width={barWidth}
@@ -74,19 +74,17 @@ function BarChart({ width, height }: { width: number; height: number }) {
                     );
                 })}
             </Group>
-            {/* <AxisBottom
-                top={yMax + margin.top}
-                tickFormat={formatDate}
-                scale={dateScale}
-                stroke={green}
-                tickStroke={green}
+            <AxisBottom
+                top={yMax - 8}
+                scale={xScale}
+                tickStroke={''}
                 hideAxisLine
                 tickLabelProps={{
-                    fill: green,
-                    fontSize: 11,
+                    fontSize: 12,
+                    fontWeight: 700,
                     textAnchor: 'middle',
                 }}
-            /> */}
+            />
         </svg>
     );
 }

@@ -1,8 +1,6 @@
-@import '../../theme';
-
 .balance-summary {
     box-sizing: border-box;
-    background: $SoftRed;
+    background: var(--primary-color-soft-red);
     height: 100%;
     width: 100%;
     padding: 20px;
@@ -23,7 +21,8 @@
         }
 
         .balance-number {
-            font-size: 25px;
+            padding-top: 5px;
+            font-size: 28px;
             font-weight: 700;
         }
     }
@@ -36,12 +35,12 @@
 }
 
 .balance-chart {
-    background: $VeryPaleOrange;
+    background: var(--neutral-color-very-pale-orange);
     height: 100%;
     width: 100%;
     box-sizing: border-box;
     padding: 20px;
-    color: $DarkBrown;
+    color: var(--neutral-color-dark-brown);
     display: flex;
     flex-direction: column;
 
@@ -50,7 +49,7 @@
         height: 2px;
         margin: 15px 0px;
         box-sizing: border-box;
-        background-color: $Cream;
+        background-color: var(--neutral-color-cream);
     }
 
     .diagram-component {
@@ -70,10 +69,10 @@
             width: 100%;
 
             .bar {
-                fill: $SoftRed;
+                fill: var(--primary-color-soft-red);
 
                 &.currDate {
-                    fill: $Cyan;
+                    fill: var(--primary-color-cyan);
                 }
 
                 &:hover {
@@ -85,7 +84,7 @@
                         top: 0;
                         left: 50%;
                         transform: translateX(-50%);
-                        background: $DarkBrown;
+                        background: var(--neutral-color-dark-brown);
                     }
                 }
             }
@@ -110,7 +109,7 @@
             width: 50%;
 
             .label {
-                color: $MediumBrown;
+                color: var(--neutral-color-medium-brown);
             }
 
             .amount-big {

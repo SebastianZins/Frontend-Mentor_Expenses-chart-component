@@ -2,7 +2,11 @@ import 'utils/theme.css';
 import ExpensesChart from './pages/ExpencesChart';
 
 function App() {
-    return ExpensesChart();
+    return (
+        <div className='theme'>
+            <ExpensesChart />
+        </div>
+    );
 }
 
 export default App;

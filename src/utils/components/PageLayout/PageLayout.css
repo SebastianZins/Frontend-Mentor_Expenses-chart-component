@@ -1,21 +1,10 @@
-/* Layout */
-/* Colors - Primary */
-/* Colors - Neutral */
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
-body {
-  font-size: 18px;
-  background: hsl(27, 66%, 92%);
-}
-
 .page {
-  position: absolute;
-  height: 82%;
-  width: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: hsl(27, 66%, 92%);
-  display: flex;
-  flex-direction: column;
-}/*# sourceMappingURL=PageLayout.css.map */
+    position: absolute;
+    height: 82%;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}

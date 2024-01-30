@@ -1,9 +1,24 @@
-/* Layout */
-/* Colors - Primary */
-/* Colors - Neutral */
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
-body {
-  font-size: 18px;
-  background: hsl(27, 66%, 92%);
-}/*# sourceMappingURL=theme.css.map */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+.theme {
+    /* Layout */
+    --mobile-size: 375px;
+    --desktop-size: 1440px;
+
+    /* Colors - Primary */
+    --primary-color-soft-red: hsl(10, 79%, 65%);
+    --primary-color-cyan: hsl(186, 34%, 60%);
+
+    /* Colors - Neutral */
+    --neutral-color-dark-brown: hsl(25, 47%, 15%);
+    --neutral-color-medum-brown: hsl(28, 10%, 53%);
+    --neutral-color-cream: hsl(27, 66%, 92%);
+    --neutral-color-very-pale-orange: hsl(33, 100%, 98%);
+
+    /* Font */
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    background: var(--neutral-color-cream);
+}

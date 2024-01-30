@@ -1,16 +1,6 @@
-/* Layout */
-/* Colors - Primary */
-/* Colors - Neutral */
-/* Font */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap");
-body {
-  font-size: 18px;
-  background: hsl(27, 66%, 92%);
-}
-
 .balance-summary {
   box-sizing: border-box;
-  background: hsl(10, 79%, 65%);
+  background: var(--primary-color-soft-red);
   height: 100%;
   width: 100%;
   padding: 20px;
@@ -29,7 +19,8 @@ body {
   font-size: 15px;
 }
 .balance-summary .label .balance-number {
-  font-size: 25px;
+  padding-top: 5px;
+  font-size: 28px;
   font-weight: 700;
 }
 .balance-summary .logo {
@@ -39,12 +30,12 @@ body {
 }
 
 .balance-chart {
-  background: hsl(33, 100%, 98%);
+  background: var(--neutral-color-very-pale-orange);
   height: 100%;
   width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  color: hsl(25, 47%, 15%);
+  color: var(--neutral-color-dark-brown);
   display: flex;
   flex-direction: column;
 }
@@ -53,7 +44,7 @@ body {
   height: 2px;
   margin: 15px 0px;
   box-sizing: border-box;
-  background-color: hsl(27, 66%, 92%);
+  background-color: var(--neutral-color-cream);
 }
 .balance-chart .diagram-component {
   display: flex;
@@ -71,10 +62,10 @@ body {
   width: 100%;
 }
 .balance-chart .diagram-component .diagram .bar {
-  fill: hsl(10, 79%, 65%);
+  fill: var(--primary-color-soft-red);
 }
 .balance-chart .diagram-component .diagram .bar.currDate {
-  fill: hsl(186, 34%, 60%);
+  fill: var(--primary-color-cyan);
 }
 .balance-chart .diagram-component .diagram .bar:hover {
   filter: brightness(150%);
@@ -85,7 +76,7 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: hsl(25, 47%, 15%);
+  background: var(--neutral-color-dark-brown);
 }
 .balance-chart .total-component {
   height: 100px;
@@ -103,7 +94,7 @@ body {
   width: 50%;
 }
 .balance-chart .total-component .number-column .label {
-  color: hsl(28, 10%, 53%);
+  color: var(--neutral-color-medium-brown);
 }
 .balance-chart .total-component .number-column .amount-big {
   font-weight: 700;
