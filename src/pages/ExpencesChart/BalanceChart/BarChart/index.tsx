@@ -11,7 +11,6 @@ const currDateNumber = 3;
 function BarChart({ width, height }: { width: number; height: number }) {
     // accessors
     const getDay = (d: data_type) => d.day;
-    const getWeekdayNumber = (d: data_type) => d.day_number;
     const getAmount = (d: data_type) => Number(d.amount) * 100;
 
     // bounds

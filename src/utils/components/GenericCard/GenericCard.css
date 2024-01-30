@@ -10,4 +10,10 @@
 }
 .card.row-1 {
   height: 420px;
+}
+
+@media screen and (min-width: 600px) {
+  .card.row-1 {
+    height: 514px;
+  }
 }/*# sourceMappingURL=GenericCard.css.map */
