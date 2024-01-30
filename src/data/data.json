@@ -1,0 +1,37 @@
+[
+    {
+        "day": "mon",
+        "day_number": 1,
+        "amount": 17.45
+    },
+    {
+        "day": "tue",
+        "day_number": 2,
+        "amount": 34.91
+    },
+    {
+        "day": "wed",
+        "day_number": 3,
+        "amount": 52.36
+    },
+    {
+        "day": "thu",
+        "day_number": 4,
+        "amount": 31.07
+    },
+    {
+        "day": "fri",
+        "day_number": 5,
+        "amount": 23.39
+    },
+    {
+        "day": "sat",
+        "day_number": 6,
+        "amount": 43.28
+    },
+    {
+        "day": "sun",
+        "day_number": 7,
+        "amount": 25.48
+    }
+]

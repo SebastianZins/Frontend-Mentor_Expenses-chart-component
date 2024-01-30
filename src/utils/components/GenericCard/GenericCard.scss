@@ -1,0 +1,15 @@
+.card {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px 0px;
+
+    &.row-0 {
+        height: 20%;
+    }
+
+    &.row-1 {
+        height: 420px;
+    }
+}
