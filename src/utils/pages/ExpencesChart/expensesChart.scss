@@ -68,6 +68,15 @@
             height: 80%;
             width: 100%;
 
+            .tooltip-text {
+                font-size: 11px;
+                fill: white;
+            }
+
+            .tooltip-rect {
+                fill: var(--neutral-color-dark-brown);
+            }
+
             .bar {
                 fill: var(--primary-color-soft-red);
 

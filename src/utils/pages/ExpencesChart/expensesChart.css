@@ -61,6 +61,13 @@
   height: 80%;
   width: 100%;
 }
+.balance-chart .diagram-component .diagram .tooltip-text {
+  font-size: 11px;
+  fill: white;
+}
+.balance-chart .diagram-component .diagram .tooltip-rect {
+  fill: var(--neutral-color-dark-brown);
+}
 .balance-chart .diagram-component .diagram .bar {
   fill: var(--primary-color-soft-red);
 }
